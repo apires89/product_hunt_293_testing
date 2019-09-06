@@ -1,0 +1,12 @@
+skittles:
+  name: "Skittles"
+  tagline: "Taste the Rainbow"
+kitkat:
+  name: "Kitkat"
+  tagline: "Have a break, Have a Kitkat"
+
+<% 1.upto(5) do |i| %>
+product_<%= i %>:
+  name: <%= Faker::Company.name %>
+  tagline: <%= Faker::Company.catch_phrase %>
+<% end %>
